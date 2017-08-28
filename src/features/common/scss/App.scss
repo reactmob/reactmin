@@ -1,0 +1,45 @@
+@import '../../../styles/mixins.scss';
+
+$header-height: 40px;
+
+.dos {
+    &-sidebar {
+        overflow: auto;
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+        background-color: #f7f7f7;
+
+        li {
+            padding: 2px;
+            a {
+                border-bottom: none;
+            }
+        }
+    }
+
+    &-header {
+        height: $header-height;
+        @import "Header";
+    }
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow: hidden;
+
+        border: 1px solid #ff0000;
+    }
+
+    &-content {
+        position: relative;
+        padding: 1rem;
+        overflow: hidden;
+        flex:2;
+        display: flex;
+
+        background: #eee;
+        border: 1px solid #ea00ff;
+    }
+}

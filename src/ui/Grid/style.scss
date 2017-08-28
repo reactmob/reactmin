@@ -1,0 +1,40 @@
+.dos-grid {
+    &__panel {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    &__toolbar {
+        border: 1px solid red;
+    }
+    &__body {
+        flex: 1;
+        border: 1px solid green;
+        margin: .5rem 0;
+    }
+    &__footer {
+        border: 1px solid blue;
+
+        &--pager {
+            display: flex;
+            flex-direction: row;
+
+            &__info {
+                flex: 1;
+            }
+
+            &__paginate {
+                flex: 1;
+                text-align: right;
+            }
+        }
+    }
+    &__cell {
+        &--row-action {
+            padding: 0 !important;
+            text-align: center;
+        }
+    }
+}

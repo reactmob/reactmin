@@ -1,0 +1,13 @@
+$header-height: 50px !default;
+
+.Header {
+    height: $header-height;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    user-select: none;
+
+    .ms-CommandBar, .ms-CommandBarItem {
+        height: $header-height;
+    }
+}
